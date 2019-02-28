@@ -1,0 +1,63 @@
+body {
+   background-color: lavender; 
+   font-family: 'Coiny', cursive;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+
+.title {
+    color: pink;
+    text-align: center;
+    padding-top: -50px;
+    font-size: 50px;
+    font-weight: 900px;
+    margin-top: 0px;
+}
+
+.card {
+    border: 5px solid pink;
+    height: 400px;
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    margin-bottom: 20px;
+    background-color: rgb(233, 231, 231);
+}
+
+.cardcontainer {
+    display: flex;
+    height: 600px;
+    width: 500px;
+    margin-top: 350px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.card:hover {
+    transform: scale(1.1,1.1);
+    background-color: pink;
+    color: white;
+    -webkit-box-shadow: 1px 3px 37px 6px rgba(153,148,153,1);
+    -moz-box-shadow: 1px 3px 37px 6px rgba(153,148,153,1);
+    box-shadow: 1px 3px 37px 6px rgba(153,148,153,1);
+    
+}
+
+.put {
+   padding: 10px; 
+}
+
+button {
+    background-color:  rgba(153,148,153,1);
+    color: pink;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+button:hover {
+    background-color: pink;
+    color: rgba(153,148,153,1);
+    border: 1px solid white;
+}
