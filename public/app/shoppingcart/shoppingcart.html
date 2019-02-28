@@ -1,0 +1,16 @@
+<form ng-submit="$ctrl.addItem(item);">
+        <input type="text" ng-model="item.product" placeholder="Product">
+        <input type="text" ng-model="item.price" placeholder="Price">
+        <input type="text" ng-model="item.quantity" placeholder="Quantity">
+        <button>Add Item</button>
+        </form>
+
+
+<section ng-repeat="cart in $ctrl.cartList track by $index">
+        <p> id: {{cart.id}} </p>
+        <p> Product: {{cart.product}} </p>
+        <p> Price: {{cart.price}} </p>
+        <p>Quantity: </p>
+        <input type="text" ng-model="itemQuantity" ng-blur="$ctrl.updateItem(cart, itemQuantity)" placeholder="{{cart.quantity}}">
+        <button ng-click="$ctrl.deleteItem(cart.id);">Delete</button>
+</section>
